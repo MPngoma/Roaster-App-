@@ -1,0 +1,28 @@
+<%- include('partials/header') %>
+
+<div class="header">
+    <h1>🔥 The Roaster</h1>
+</div>
+
+<div class="container">
+
+    <div class="left image-section">
+        <p>Insult your friends with sizzling creativity!</p>
+        <img src="/images/image.png" alt="Roasting Food">
+    </div>
+
+    <div class="right roast-box">
+        <h2>🔥 Roasting Made Easy 🔥</h2>
+        <% if (content) { %>
+            <p><%= content %></p>
+        <% } else { %>
+            <p>Generate or Give us your best roast</p>
+            <% } %>
+        <a href="/"><button class="generate-btn">Generate Roast!</button></a>
+        <button class="make-btn">Make your Roast</button>
+    </div>
+
+</div>
+
+
+<%- include('partials/footer') %>
