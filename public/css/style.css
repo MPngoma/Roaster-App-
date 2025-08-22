@@ -72,6 +72,15 @@
             background-color: #db3a34;
         }
 
+        .save-btn {
+            background-color: #db3a34;
+        }
+
+        .button-container {
+            display: inline-block;
+            gap: 10px;
+        }
+
         button:hover {
             opacity: 0.8;
         }

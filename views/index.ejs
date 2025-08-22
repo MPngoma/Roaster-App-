@@ -13,13 +13,24 @@
 
     <div class="right roast-box">
         <h2>🔥 Roasting Made Easy 🔥</h2>
-        <% if (content) { %>
-            <p><%= content %></p>
+        <!-- A form to generate and save the generated jokes-->
+         <% if (content) { %>
+            <p class="roast-content"><%= content %></p>
         <% } else { %>
             <p>Generate or Give us your best roast</p>
             <% } %>
-        <a href="/"><button class="generate-btn">Generate Roast!</button></a>
-        <button class="make-btn">Make your Roast</button>
+            <form action="/save" method="POST">
+                <input type="hidden" name="insult" value="<%= content %>">
+                <button type="submit" class="save-btn">Save Roast</button>
+            </form>
+            <form action="/" method="GET">
+                <button type="submit" class="generate-btn">Generate Roast</button>
+            </form>
+        
+            <!-- <button class="make-btn">Make your Roast</button> -->
+        
+        
+        
     </div>
 
 </div>
