@@ -1,0 +1,17 @@
+<%- include("partials/header") %>
+<div class="header">
+    <a href="/"><h1>The Roaster</h1></a>
+    <h2>🔥 Create Your Own Roast 🔥</h2>
+</div>
+
+<div class="area">
+<!-- Align create form in the center of the page-->
+    <div class="create-container">
+        <form action="/create-roast" method="POST" class="create-form">
+            <textarea name="createdInsult" rows="5" cols="75" placeholder="Type your roast here..." required></textarea>
+            <!-- Align button bellow the textarea -->
+            <button type="submit" class="save-btn">Save Roast</button>
+        </form>
+    </div>
+</div>
+<%- include("partials/footer") %>

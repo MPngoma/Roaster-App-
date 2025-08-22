@@ -72,10 +72,6 @@
             background-color: #db3a34;
         }
 
-        .save-btn {
-            background-color: #db3a34;
-        }
-
         .button-container {
             display: inline-block;
             gap: 10px;
@@ -89,4 +85,36 @@
             .container {
                 flex-direction: column;
             }
+        }
+
+        /* Additional styles for create.ejs */
+
+        .area {
+            height: 75vh;
+    }
+
+        .create-container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+
+        /* Align save button below the textarea */
+        .save-btn {
+            display: block;
+            margin: 20px auto 0 auto;
+            background-color: #db3a34;
+        }
+
+        a:hover {
+            /* remove underline on anchor hover */
+            opacity: 0.8;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
         }
